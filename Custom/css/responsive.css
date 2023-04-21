@@ -1,0 +1,90 @@
+@media screen and (max-width: 1100px){
+    .services-box p{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .logo{
+        float: right;
+        margin-top: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .main-nav{
+        display: none;
+    }
+    .mobile-menu span img{
+        display: block;
+        z-index: 2;
+    }
+
+    .services-container .span_1_of_4{
+        width: 49.2%;
+    }
+    .services-container .col:nth-child(1) {
+        margin-left: 0;
+        margin-right: .5rem;
+    }
+    .services-container .col:nth-child(2) {
+        margin-left: 0;
+    }
+    .services-container .col:nth-child(3) {
+       margin-left: 0;
+        margin-top: 3.5rem;
+    }
+    .services-container .col:nth-child(4) {
+        margin-top: 3.5rem;
+        margin-left: 0;
+    }
+    .services-box p{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    html{
+        font-size: 56.25%;
+    }
+
+    .hedaer-box-two .col{
+        width: 49.2%;
+    }
+    .btn-hedaer{
+        float: right;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .header-box-one h2{
+        font-size: 1.8rem;
+    }
+    .tk-box .fa-bangladeshi-taka-sign{
+        font-size: 1.8rem;
+    }
+    .tk-box span{
+        font-size: 1.8rem;
+    }
+    .hedaer-left-column h3{
+        font-size: 1.6rem;
+    }
+
+    .services-box{
+        margin: 0 1rem;
+    }
+    .services-box p{
+        font-size: 1.1rem;
+    }
+    .services-container .col:nth-child(3) {
+        margin-right: .5rem;
+        margin-top: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .services-box p{
+        font-size: 1rem;
+    }
+}

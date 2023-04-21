@@ -1,0 +1,381 @@
+/* ================ *** ================ */
+            /* BASIC SETUP */
+/* ================ *** ================ */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	text-rendering: optimizelegibility;
+	font-size: 1.6rem;
+	line-height: 1.3;
+}
+
+:focus{
+	outline: 0;
+}
+
+/* ================ *** ================ */
+       /* REUSABLE COMPONENTS */
+/* ================ *** ================ */
+
+.row{
+	max-width: 114rem;
+	margin: 0 auto;
+}
+
+section{
+	padding: 4.5rem 2rem;
+}
+
+p{
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+h2{
+	font-weight: 600;
+}
+
+.btn{
+	font-family: 500;
+	display: inline-block;
+	text-decoration: none;
+}
+
+/* ================ *** ================ */
+            /* NAV SECTION */
+/* ================ *** ================ */
+
+nav{
+	padding: 1rem 0;
+}
+
+.logo{
+	max-width: 15rem;
+	float: left;
+	margin-top: 3rem;
+	cursor: pointer;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 3.5rem;
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+.main-nav li:first-child{
+	margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	font-weight: 500;
+	text-decoration: none;
+	display: inline-block;
+	color: #2c7c7a;
+	text-transform: capitalize;
+	font-size: 1.6rem;
+	margin: 0 .6rem;
+	transition: .5s;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu span img{
+	max-width: 100%;
+	height: 3rem;
+	float: left;
+	margin-top: 1rem;
+	cursor: pointer;
+	display: none;
+}
+
+.overlay{
+	width: 0;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 9999;
+	overflow-x: hidden;
+	transition: .5s;
+}
+
+.overlay-content{
+	position: relative;
+	top: 8%;
+	width: 80%;
+	left: 5%;
+}
+
+.overlay a{
+	text-decoration: none;
+}
+
+.overlay .M-a{
+	display: block;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-size: 2rem;
+	color: #2c7c7a;
+	margin: 1.5rem 0;
+	transition: .5s;
+}
+
+.overlay .M-a:hover{
+	color: #FF8A00;
+}
+
+.overlay .closeBtn{
+	position: absolute;
+	top: 2rem;
+	right: 4.5rem;
+	font-size: 3rem;
+	color: #2c7c7a;
+	transition: .5s;
+}
+
+.overlay .closeBtn:hover{
+	color: #222754;
+}
+
+
+/* ================ *** ================ */
+          /* HEADER SECTION */
+/* ================ *** ================ */
+
+header{
+	background: #55abaa;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.header-box-one p{
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.header-box-one h2{
+	font-size: 2rem;
+	color: #fff;
+	margin-top: .3rem;
+}
+
+.tk-box{
+	margin-top: .3rem;
+}
+
+.tk-box .fa-bangladeshi-taka-sign{
+	color: #fff;
+	font-size: 2rem;
+}
+
+.tk-box span{
+	font-weight: 500;
+	color: #fff;
+	font-size: 2rem;
+}
+
+.tk-box .fa-arrow-up{
+	display: inline-block;
+	color: #6BF86C;
+	font-size: 1.6rem;
+	margin-left: .5rem;
+}
+
+.hedaer-box-two{
+	margin-top: 2rem;
+}
+
+.hedaer-left-column h3{
+	font-weight: 500;
+	color: #B5EDEA;
+	font-size: 1.8rem;
+}
+
+.hedaer-left-column .fa-bangladeshi-taka-sign{
+	margin-right: .3rem;
+	font-weight: 800;
+	color: #fff;
+	margin-top: .8rem;
+}
+
+.hedaer-left-column span{
+	font-weight: 500;
+	color: #fff;
+}
+
+.btn-hedaer{
+	background: #fff;
+	font-weight: 500;
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border-radius: 1rem;
+	color: #6B8F89;
+	font-size: 1.6rem;
+	float: right;
+}
+
+/* ================ *** ================ */
+        /* USER PROFILE SECTION */
+/* ================ *** ================ */
+
+.user-profile-section{
+	background: #71c7c734;
+	margin-top: 4rem;
+}
+
+.user-profile-content h2{
+	color: #e4572e;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+.user-profile-content h3{
+	font-weight: 500;
+	color: #222;
+	font-size: 1.7rem;
+}
+
+.user-profile-content .btn-user{
+	font-weight: 600;
+	background: #fff;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 2rem;
+	border: .3rem solid #2c7c7a;
+	color: #2c7c7a;
+	background: transparent;
+	margin-top: 1rem;
+}
+
+.user-profile-content p{
+	margin-top: 2rem;
+	color: #222;
+}
+
+/* ================ *** ================ */
+          /* SERVICES SECTION */
+/* ================ *** ================ */
+
+.services-container{
+	text-align: center;
+}
+
+.services-box{
+	padding: 2rem 2rem 3rem 2rem;
+	border-radius: 1rem;
+	box-shadow: 10px 10px 8px 10px #ddd;
+	background: #71c7c734;
+}
+
+.message-box img{
+	max-width: 100%;
+	height: 2rem !important;
+	display: block;
+	float: right;
+}
+
+.services-box p{
+	font-weight: 600;
+	color: #2c7c7a;
+	font-size: 1.7rem;
+}
+
+.services-box img{
+	max-width: 100%;
+	height: 4.5rem;
+}
+
+
+/* ================ *** ================ */
+       /* FINANCIAL PLANNER SECTION */
+/* ================ *** ================ */
+
+.financial-section{
+	background: #71c7c734;
+}
+
+.financial-container{
+	border-left: .5rem solid #2c7c7a;
+	padding-left: 1.5rem;
+}
+
+.financial-title i{
+	color: #e4572e;
+	font-size: 2rem;
+}
+
+.financial-title span{
+	font-weight: 500;
+	color: #e4572e;
+	font-size: 2rem;
+}
+
+.financial-section .from{
+	margin-top: 4rem;
+}
+
+.form-box form{
+	width: 100%;
+}
+
+.form-box form label{
+	font-weight: 500;
+	font-size: 1.6rem;
+	display: block;
+	margin-top: 2rem;
+}
+
+.form-box form input[type="text"]{
+	font-weight: 400;
+	width: 100%;
+	border: none;
+	border: .2rem solid #2D7D7A;
+	padding: .6rem 1.2rem;
+	border-radius: 2rem;
+	font-size: 1.6rem;
+	color: #000;
+	background: transparent;
+	margin-top: 1rem;
+}
+
+.form-box form ::placeholder{
+	color: #2D7D7A;
+	opacity: 1;
+}
+
+.form-box .btn-send{
+	border: none;
+	background: #2D7D7A;
+	color: #fff;
+	padding: 1rem 2.5rem;
+	border-radius: 2rem;
+	margin-top: 1.5rem;
+	transition: .5s;
+	margin: 0 auto;
+	display: block;
+	margin-top: 5rem;
+}
+
+.form-box .btn-send:hover{
+	background: #CB816B;
+	cursor: pointer;
+}
