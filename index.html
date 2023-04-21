@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Interview - Home Page Design</title>
+	<!-- Favicon Link -->
+	<link rel="shortcut icon" type="image/x-icon" href="Custom/img/Favicon.png">
+	<!-- Font Awesome Link -->
+	<script src="https://kit.fontawesome.com/e5a6b512f8.js" crossorigin="anonymous"></script>
+	<!-- Google Font Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- Custom File Link -->
+	<link rel="stylesheet" href="Custom/css/style.css">
+	<link rel="stylesheet" href="Custom/css/responsive.css">
+	<!-- Vendors File Link -->
+	<link rel="stylesheet" href="Vendors/css/gird.css">
+	<link rel="stylesheet" href="Vendors/css/normalize.css">
+  </head>
+  <body>
+
+	<!-- START NAV SECTION -->
+
+	<nav>
+		<div class="row">
+			<a href="index.html">
+				<img src="Custom/img/logo.png" alt="logo" class="logo">
+			</a>
+			<ul class="main-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">User</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+			<div class="mobile-menu">
+				<span onclick="openNav()"><img src="Custom/img/menu.png" alt="menu"></span>
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" onclick="closeNav()" class="closeBtn"><i class="fas fa-times"></i></a>
+					<div class="overlay-content">
+						<a onclick="closeNav()" class="M-a" href="#">Home</a>
+						<a onclick="closeNav()" class="M-a" href="#">About</a>
+						<a onclick="closeNav()" class="M-a" href="#">User</a>
+						<a onclick="closeNav()" class="M-a" href="#">Profile</a>
+						<a onclick="closeNav()" class="M-a" href="#">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- END NAV SECTION -->
+
+	<!-- START HEADER SECTION -->
+
+	<header>
+		<div class="row">
+			<div class="header-content">
+				<div class="header-box-one">
+					<p>Since last week</p>
+					<h2>Portfolio Value</h2>
+					<div class="tk-box">
+						<i class="fa-solid fa-bangladeshi-taka-sign"></i> <span>0.00</span> <i class="fa-solid fa-arrow-up"></i>
+					</div>
+				</div>
+				<div class="hedaer-box-two">
+					<div class="col span_1_of_2">
+						<div class="hedaer-left-column">
+							<h3>BO A/C Balance(Cash)</h3>
+							<i class="fa-solid fa-bangladeshi-taka-sign"></i> <span>0.00</span>
+						</div>
+					</div>
+					<div class="col span_1_of_2">
+						<div class="header-button">
+							<a href="#" class="btn btn-hedaer">Prefund Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- END HEADER SECTION -->
+
+	<!-- START USER PROFILE SECTION -->
+
+	<section class="user-profile-section">
+		<div class="row">
+			<div class="user-profile-content">
+				<h2>User Profile 20% Completed</h2>
+				<h3>Please complate your user Profile</h3>
+				<a href="#" class="btn btn-user">GO to User Profile</a>
+				<p>CDBL BO Account Maintenance Fee - BDT 450 per year. Fee will be deducted by your Broker from your BO Account balance every year by 31 July.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- END USER PROFILE SECTION -->
+
+	<!-- START SERVICES SECTION -->
+
+	<section class="services-section">
+		<div class="row">
+			<div class="services-container">
+				<div class="col span_1_of_4">
+					<div class="services-box">
+						<img src="Custom/img/invest-icon.png" alt="invest-icon">
+						<p>Invest</p>
+					</div>
+				</div>
+				<div class="col span_1_of_4">
+					<div class="services-box">
+						<img src="Custom/img/market-icon.png" alt="market-icon">
+						<p>Market</p>
+						<div class="message-box">
+							<img src="Custom/img/message.png" alt="message">
+						</div>
+					</div>
+				</div>
+				<div class="col span_1_of_4">
+					<div class="services-box">
+						<img src="Custom/img/dashboard-icon.png" alt="dashboard-icon">
+						<p>Dashboard</p>
+					</div>
+				</div>
+				<div class="col span_1_of_4">
+					<div class="services-box">
+						<img src="Custom/img/tk-icon.png" alt="market-icon">
+						<p>BO Prefund & Withdraw</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- END SERVICES SECTION -->   
+
+	<!-- START FINANCIAL PLANNER SECTION -->
+
+	<section class="financial-section">
+		<div class="row financial-container">
+
+		<div class="row">
+			<div class="financial-title">
+				<i class="fa-solid fa-wallet"></i> <span>Finacial Planner</span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="form-box">
+				<form action="#" method="post">
+					<div class="row">
+                        <label for="">Your Monthly Income</label>
+						<input type="text" placeholder="5000" required>
+					</div>
+					<div class="row">
+						<label for="">Your Monthly Expense</label>
+						<input type="text" placeholder="3000" required>
+					</div>
+					<div class="row">
+						<input type="submit" value="Next" class="btn btn-send">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+	<!-- END FINANCIAL PLANNER SECTION -->
+  
+   
+  <!-- Js File Link -->
+  <!-- jQuery CDN By Google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.8.4/d3.min.js"></script>
+  <!-- Vendors Js All File Link -->
+  <script src="Vendors/js/html5shiv-printshiv.min.js"></script>
+  <script src="Vendors/js/respond.min.js"></script>
+  <script src="Vendors/js/selectivizr.js"></script>
+  <!-- Custom Js File -->
+  <script src="Custom/js/main.js"></script>
+  </body>
+</html>
